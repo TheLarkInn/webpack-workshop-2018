@@ -21,4 +21,4 @@ the project, start with this:
 These steps will assume that you have `cd`'d in your preferred editor to this repositories cloned location.
 
 1. Install dependencies: `npm install`
-2. 
+2. Enjoy the workshop!
