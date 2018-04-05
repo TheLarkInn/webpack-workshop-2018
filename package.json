@@ -4,7 +4,7 @@
   "description": "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
-    
+    "serve": "http-server ./"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/TheLarkInn/webpack-workshop-2018/issues"
   },
-  "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme"
+  "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
