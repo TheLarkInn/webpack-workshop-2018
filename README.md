@@ -17,6 +17,8 @@ the project, start with this:
 3. [Clone](https://help.github.com/articles/cloning-a-repository/) your fork
 4. In the directory you cloned the repository, run `git fetch --all`
 
-## Content Outline
+## Getting Started
+These steps will assume that you have `cd`'d in your preferred editor to this repositories cloned location.
 
-TBD! 😏
+1. Install dependencies: `npm install`
+2. 
