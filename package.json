@@ -35,6 +35,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "date-fns": "^1.29.0",
     "lodash-es": "^4.17.8"
   }
 }
