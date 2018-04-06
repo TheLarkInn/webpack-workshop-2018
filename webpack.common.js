@@ -21,15 +21,6 @@ module.exports = {
                         options: {limit: 10000}
                     }
                 ]
-            },
-            {
-                test: /\.js/,
-                use: [
-                    {
-                        loader: "babel-loader",
-                        exclude: [/node_modules/]
-                    }
-                ]
             }
         ]
     }
