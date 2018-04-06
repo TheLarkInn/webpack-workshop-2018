@@ -1,6 +1,8 @@
 import {a} from "./bar";
-import imgSrc from "./icon-square-small.jpg";
+import imgSrc from "./icon-square-small.jpg";   
 import "./index.css";
+import {jk} from "./js.txt";
+
 // import foo from "./foo";
 const foo = () => import("./foo")
     .then(m => m.default);

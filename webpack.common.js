@@ -14,6 +14,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.txt/,
+                use: "my-first-loader"
+            },
+            {
                 test: /\.jpg$/,
                 use: [
                     {
@@ -23,5 +27,10 @@ module.exports = {
                 ]
             }
         ]
+    },
+    resolveLoader: {
+        alias: {
+            "my-first-loader": require.resolve("./my-first-loader.js")
+        }
     }
 };
