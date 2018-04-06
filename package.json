@@ -35,6 +35,10 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.1",
     "date-fns": "^1.29.0",
     "lodash-es": "^4.17.8"
   }
