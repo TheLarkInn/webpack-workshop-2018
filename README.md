@@ -24,5 +24,5 @@ These steps will assume that you have `cd`'d in your preferred editor to this re
 2. Enjoy the workshop!
 
 ## Contact
-Email: sean.larkin@microsoft.com
-Twitter: @TheLarkInn
+* Email: sean.larkin@microsoft.com
+* Twitter: @TheLarkInn
