@@ -22,3 +22,7 @@ These steps will assume that you have `cd`'d in your preferred editor to this re
 
 1. Install dependencies: `npm install`
 2. Enjoy the workshop!
+
+## Contact
+Email: sean.larkin@microsoft.com
+Twitter: @TheLarkInn
