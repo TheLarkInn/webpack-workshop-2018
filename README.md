@@ -25,7 +25,7 @@ These steps will assume that you have `cd`'d in your preferred editor to this re
 
 ## Contact
 * Email: sean.larkin@microsoft.com
-* Twitter: @TheLarkInn
+* Twitter: [@TheLarkInn](https://twitter.com/thelarkinn)
 
 ## Resources
 * [Slides](https://docs.google.com/presentation/d/1RuTDSvfaEFBFQ-3OiyxtuPTaGhv-xv7OG4jt5mpIdUw/edit?usp=sharing)
