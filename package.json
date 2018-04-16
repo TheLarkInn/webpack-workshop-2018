@@ -1,7 +1,8 @@
 {
   "name": "webpack-workshop-2018",
   "version": "1.0.0",
-  "description": "Learning resources for the webpack academy workshop series for 2018",
+  "description":
+    "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
     "serve": "http-server ./",
@@ -24,9 +25,12 @@
   "devDependencies": {
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.11.1",
     "style-loader": "^0.20.3",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.1",
     "url-loader": "^1.0.1",
     "webpack": "^4.5.0",
     "webpack-bundle-analyzer": "^2.11.1",
