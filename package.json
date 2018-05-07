@@ -5,7 +5,10 @@
     "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "prod": "npm run webpack -- --mode production",
+    "dev": "npm run webpack -- --mode development",
+    "debug": "npm run webpack --inspect --debug-brk"
   },
   "repository": {
     "type": "git",
