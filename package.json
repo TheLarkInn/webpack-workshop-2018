@@ -1,10 +1,11 @@
 {
   "name": "webpack-workshop-2018",
   "version": "1.0.0",
-  "description": "Learning resources for the webpack academy workshop series for 2018",
+  "description":
+    "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server ./"
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TheLarkInn/webpack-workshop-2018/issues"
-  },
   "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
@@ -31,6 +29,9 @@
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.2.0",
+    "bugs": {
+      "url": "https://github.com/TheLarkInn/webpack-workshop-2018/issues"
+    },
     "url-loader": "^1.0.1",
     "webpack": "^4.8.0",
     "webpack-bundle-analyzer": "^2.11.1",
