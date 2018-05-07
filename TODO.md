@@ -99,3 +99,17 @@ Composition can even go a step further now:
   /* ... */
 }
 ```
+
+## Lesson 10 (feature/10-lets-write-modules)
+
+### Writing Modules
+
+By default when you run webpack, (`npm run dev`), you will notice that webpack's feedback in the console contains a list of files, including `"./src/index.js"`. This is called the **Entry point**. This is the root of your _Dependency Graph_ that webpack creates.
+
+To put this into action let's add more modules to the graph! Let's create a new JavaScript file in the `./src` directory, called `nav.js`.
+
+**./src/nav.js**
+
+```
+
+```
