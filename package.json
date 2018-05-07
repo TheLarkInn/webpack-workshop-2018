@@ -6,9 +6,11 @@
   "main": "index.js",
   "scripts": {
     "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "debug": "npm run webpack -- --inspect --debug-brk",
     "prod": "npm run webpack -- --mode production",
     "dev": "npm run webpack -- --mode development",
-    "debug": "npm run webpack --inspect --debug-brk"
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode development"
   },
   "repository": {
     "type": "git",
@@ -32,9 +34,6 @@
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.2.0",
-    "bugs": {
-      "url": "https://github.com/TheLarkInn/webpack-workshop-2018/issues"
-    },
     "url-loader": "^1.0.1",
     "webpack": "^4.8.0",
     "webpack-bundle-analyzer": "^2.11.1",
