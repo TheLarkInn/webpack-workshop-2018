@@ -74,9 +74,27 @@ Sometimes we want the ability to use `node` features like local inspector (`--in
 {
   "scripts": {
     "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "debug": "npm run webpack -- --inspect --debug-brk",
+    "prod": "npm run webpack -- --mode production",
+    "dev": "npm run webpack -- --mode development"
+  }
+  /* ... */
+}
+```
+
+Composition can even go a step further now:
+
+**package.json**
+
+```json
+{
+  "scripts": {
+    "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "debug": "npm run webpack -- --inspect --debug-brk",
     "prod": "npm run webpack -- --mode production",
     "dev": "npm run webpack -- --mode development",
-    "debug": "npm run webpack --inspect --debug-brk"
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode development"
   }
   /* ... */
 }
