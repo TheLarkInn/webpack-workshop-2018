@@ -1,14 +1,17 @@
 {
   "name": "webpack-workshop-2018",
   "version": "1.0.0",
-  "description": "Learning resources for the webpack academy workshop series for 2018",
+  "description":
+    "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
-    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "debug":
+      "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "npm run webpack -- --env.mode production",
     "dev": "npm run webpack-dev-server -- --env.mode development --hot",
+    "prod:typescript": "npm run prod -- --env.presets typescript",
     "prod:debug": "npm run debug -- --env.mode production",
     "dev:debug": "npm run debug -- --env.mode development"
   },
@@ -33,7 +36,8 @@
     "mini-css-extract-plugin": "^0.4.0",
     "postcss-loader": "^2.1.5",
     "style-loader": "^0.21.0",
-    "ts-loader": "^4.2.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.9.0-dev.20180506",
     "url-loader": "^1.0.1",
     "webpack": "^4.8.0",
     "webpack-bundle-analyzer": "^2.11.1",
