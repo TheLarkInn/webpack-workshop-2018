@@ -11,11 +11,7 @@ import imageUrl from "./webpack-logo.jpg";
 import css from "./footer.css";
 import buttonStyles from "./button.css";
 
-if (process.env.NODE_ENV === "development") {
-    const setButtonStyle = (color) => import(/* webpackMode: "lazy-once" */`./button-styles/${color}.js`);
-} else {
-    const setButtonStyle = (color) => import(`./button-styles/${color}.js`);
-}
+const setButtonStyle = (color) => import(`./button-styles/${color}.js`);
 
 const image = makeImage(imageUrl);
 const button = makeButton("Yay! A Button!");
@@ -24,7 +20,7 @@ button.style = makeColorStyle("cyan");
 document.body.appendChild(button);
 
 button.addEventListener("click", e => {
-    getFooter().then(({footer}) => {
+    getFooter().then(footerModule => {
         document.body.appendChild(footerModule.footer);
     });
 
