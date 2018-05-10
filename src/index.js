@@ -26,6 +26,7 @@ button.addEventListener("click", e => {
 
     getGSAP().then(gsap => {
         console.log(gsap);
+        const foo = {...gsap};
     });
 
     setButtonStyle("blue").then(styleStr => {
