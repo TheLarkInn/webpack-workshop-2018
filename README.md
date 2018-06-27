@@ -6,6 +6,7 @@ Code repository for the three Webpack courses recorded in 2018.
 - Instant Loading Websites with Webpack
 [Slides](https://docs.google.com/presentation/d/1FW3GT9Ww1S6SEGu8HAO5eRZUFggfVuFE2ievNCDWVDo/edit?usp=sharing)
 - Mastering Webpack: Under the Hood & Extending
+[Slides](https://docs.google.com/presentation/d/1P5f-cK4jlhGQIfPQ_vaYFRWV464kBb5UaUBkfRjBp4Y/edit?usp=sharing)
 
 ## Project Setup
 
