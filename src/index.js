@@ -1,3 +1,4 @@
+import "./index.css";
 import createButton from "./button";
 import colorElement from "./colorElement";
 
