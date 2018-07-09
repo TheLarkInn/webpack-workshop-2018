@@ -13,11 +13,6 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
       module: {
         rules: [
           {
-            test: /\.jsx?$/,
-            use: ["babel-loader"],
-            exclude: [/node_modules/]
-          },
-          {
             test: /\.jpeg$/,
             use: [
               {

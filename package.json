@@ -9,7 +9,8 @@
     "prod:compress": "yarn prod -- --env.presets compress",
     "prod:analyze": "yarn prod -- --env.presets analyze",
     "prod": "yarn webpack -- --env.mode production",
-    "dev": "yarn webpack-dev-server -- --env.mode development --hot"
+    "dev": "yarn webpack-dev-server -- --env.mode development --hot",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --env.mode production"
   },
   "repository": {
     "type": "git",
