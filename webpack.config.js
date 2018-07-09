@@ -10,6 +10,21 @@ module.exports = env => {
   return webpackMerge(
     {
       mode: env.mode,
+      module: {
+        rules: [
+          {
+            test: /\.jpeg$/,
+            use: [
+              {
+                loader: "url-loader",
+                options: {
+                  limit: 5000
+                }
+              }
+            ]
+          }
+        ]
+      },
       plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()]
     },
     modeConfig(env)
