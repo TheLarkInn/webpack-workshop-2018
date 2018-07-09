@@ -4,9 +4,10 @@
   "description": "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
+    "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
     "prod": "yarn webpack -- --env.mode production",
-    "dev": "yarn webpack -- --env.mode development --watch"
+    "dev": "yarn webpack-dev-server -- --env.mode development --hot"
   },
   "repository": {
     "type": "git",

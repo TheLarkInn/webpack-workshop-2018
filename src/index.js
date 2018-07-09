@@ -1,7 +1,15 @@
-import logger from "./logger";
-import { reverseString } from "./reverse";
-import upcase from "./upcase";
+import createButton from "./button";
+import colorElement from "./colorElement";
 
-const name = "Sean";
+const div = document.createElement("div");
+div.innerText = "Hello World";
+div.style.color = "red";
 
-logger(reverseString(upcase(name)));
+const button = createButton("HEY FIRST BUTTON YO!");
+
+button.addEventListener("click", e => {
+  colorElement(div, "cyan");
+});
+
+document.body.appendChild(button);
+document.body.appendChild(div);
