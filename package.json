@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "prod": "yarn webpack -- --mode production",
-    "dev": "yarn webpack -- --mode development"
+    "dev": "yarn webpack -- --mode development --watch"
   },
   "repository": {
     "type": "git",
