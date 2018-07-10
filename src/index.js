@@ -2,8 +2,15 @@ import "./index.css";
 import createButton from "./button";
 // import colorElement from "./colorElement";
 import imgUrl from "./icon.jpeg";
-const setButtonColor = colorName => import(`./button-colors/${colorName}`);
-const getColorElement = () => import("./colorElement");
+
+let setButtonColor;
+if (process.env.NODE_ENV === "development") {
+  setButtonColor = colorName => import(/* webpackMode: 'lazy-once' */ `./button-colors/${colorName}`);
+} else {
+  setButtonColor = colorName => import(`./button-colors/${colorName}`);
+}
+
+const getColorElement = () => import(/* webpackChunkName: 'colorElement' */ "./colorElement");
 
 console.log(imgUrl);
 

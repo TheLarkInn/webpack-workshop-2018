@@ -25,6 +25,9 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
           }
         ]
       },
+      output: {
+        chunkFilename: "[id].[name].lazy.js"
+      },
       plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()]
     },
     modeConfig({ mode, presets }),
