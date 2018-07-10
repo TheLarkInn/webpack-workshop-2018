@@ -9,7 +9,7 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
   console.log(mode, presets);
   return webpackMerge(
     {
-      mode,
+      mode: "none",
       module: {
         rules: [
           {
