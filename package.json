@@ -35,6 +35,7 @@
     "fork-ts-checker-webpack-plugin": "^0.4.2",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
+    "puppeteer": "^1.5.0",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.4.2",
     "url-loader": "^1.0.1",
