@@ -1,3 +1,5 @@
+const MyFirstCompilationPlugin = require("./MyFirstCompilationPlugin");
+
 /** @typedef {import("webpack/lib/Compiler")} Compiler */
 
 class MyFirstPlugin {
@@ -13,9 +15,7 @@ class MyFirstPlugin {
       console.log(Reflect.ownKeys(stats.compilation.assets).join("\n"));
     });
     compiler.hooks.compilation.tap("MyFirstPlugin", compilation => {
-      compilation.hooks.buildModule.tap("MyFirstModule", module => {
-        debugger;
-      });
+      new MyFirstCompilationPlugin().apply(compilation);
     });
   }
 }
