@@ -6,11 +6,13 @@
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
+    "prod:custom": "yarn prod -- --env.presets custom",
     "prod:compress": "yarn prod -- --env.presets compress",
     "prod:analyze": "yarn prod -- --env.presets analyze",
     "prod": "yarn webpack -- --env.mode production",
     "dev": "yarn webpack-dev-server -- --env.mode development --hot",
-    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --env.mode production"
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --env.mode production",
+    "debug:custom": "yarn debug -- --env.presets custom"
   },
   "repository": {
     "type": "git",
