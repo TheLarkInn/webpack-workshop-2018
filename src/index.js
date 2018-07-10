@@ -10,8 +10,6 @@ if (process.env.NODE_ENV === "development") {
   setButtonColor = colorName => import(`./button-colors/${colorName}`);
 }
 
-const getColorElement = () => import(/* webpackChunkName: 'colorElement' */ "./colorElement");
-
 console.log(imgUrl);
 
 const img = document.createElement("img");
@@ -27,10 +25,7 @@ const button = createButton("HEY FIRST BUTTON YO!");
 const button1 = createButton("CHANGE THIS THEME");
 
 button.addEventListener("click", e => {
-  getColorElement().then(m => {
-    let colorElement = m.default;
-    colorElement(div, "cyan");
-  });
+  import("./divColor.css");
 });
 
 button1.addEventListener("click", e => {
