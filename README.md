@@ -12,7 +12,7 @@ the latest [npm](https://www.npmjs.com/) v5 or greater installed as well.
 
 > Note: Sean uses [yarn](https://yarnpkg.com/lang/en/) instead of npm at times in this course. yarn and npm do the same thing, with a slightly different API.
 > `npm run dev` vs `yarn dev`
-> `npm install webpack-dev-server --save-dev` vs `yarn install webpack-dev-server --save`
+> `npm install webpack-dev-server --save-dev` vs `yarn add webpack-dev-server`
 
 There are different branches depending on which course you are going through.
 
