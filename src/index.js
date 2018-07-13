@@ -1,5 +1,6 @@
 import { makeTweetElement, makeTweetComposeButton } from "./tweet";
-import makeTweetCompose from "./compose";
+// import makeTweetCompose from "./compose";
+const makeTweetCompose = () => import("./compose").then(m => m.default);
 import tweetData from "./tweetData";
 
 const tweetList = document.createDocumentFragment();
@@ -8,9 +9,11 @@ const tweetHeader = document.createElement("header");
 const tweetButton = makeTweetComposeButton();
 
 tweetButton.childNodes[0].addEventListener("click", () => {
-  const tweetcompose = makeTweetCompose(tweetData, document.body, newTweetData => {
-    const newElement = makeTweetElement(newTweetData);
-    tweetListContainer.appendChild(newElement);
+  makeTweetCompose().then(mtcMod => {
+    mtcMod(tweetData, document.body, newTweetData => {
+      const newElement = makeTweetElement(newTweetData);
+      tweetListContainer.appendChild(newElement);
+    });
   });
 });
 
