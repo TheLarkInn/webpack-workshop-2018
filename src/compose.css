@@ -1,0 +1,12 @@
+.tweet-compose {
+  box-shadow: -1px 2px 10px 0;
+  height: 40px;
+  width: 50%;
+  background: snow;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  border: black 1px solid;
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+.tweet-list-container {
+  list-style: none;
+  padding: 10px;
+}
+
+.tweet-container {
+  background: snow;
+  position: relative;
+  padding: 9px 12px;
+  min-height: 51px;
+  display: block;
+  border-bottom: 1px solid #e6ecf0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tweet-container i {
+  color: grey;
+}
+
+.tweet-header {
+  display: flex;
+}
+
+.tweet-compose-button {
+  background-color: #4993cc;
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  border-color: transparent;
+  margin-left: auto;
+}
