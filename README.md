@@ -27,7 +27,7 @@ These steps will assume that you have `cd`'d in your preferred editor to this re
 1. Install dependencies: `npm install`
 2. Enjoy the course!
 
-Tip: Use `git clone BRANCH_NAME -f` to jump into a given branch. The `-f` will force overwriting your local changes.
+Tip: Use `git checkout BRANCH_NAME -f` to jump into a given branch. The `-f` will force overwriting your local changes.
 
 ## Contact
 * Email: sean.larkin@microsoft.com
