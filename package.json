@@ -1,20 +1,19 @@
 {
   "name": "webpack-workshop-2018",
   "version": "1.0.0",
-  "description":
-    "Learning resources for the webpack academy workshop series for 2018",
+  "description": "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheLarkInn/webpack-workshop-2018.git"
+    "url": "git+https://github.com/rtm124/webpack-workshop-2018.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
+  "homepage": "https://github.com/rtm124/webpack-workshop-2018#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",

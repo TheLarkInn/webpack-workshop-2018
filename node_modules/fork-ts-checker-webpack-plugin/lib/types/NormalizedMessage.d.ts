@@ -1,0 +1,51 @@
+import tsTypes = require('typescript');
+import tslintTypes = require('tslint');
+declare type ErrorType = 'diagnostic' | 'lint';
+declare type Severity = 'error' | 'warning';
+interface NormalizedMessageJson {
+    type: ErrorType;
+    code: string | number;
+    severity: Severity;
+    content: string;
+    file: string;
+    line: number;
+    character: number;
+}
+declare class NormalizedMessage {
+    static TYPE_DIAGNOSTIC: ErrorType;
+    static TYPE_LINT: ErrorType;
+    static SEVERITY_ERROR: Severity;
+    static SEVERITY_WARNING: Severity;
+    type: ErrorType;
+    code: string | number;
+    severity: Severity;
+    content: string;
+    file: string;
+    line: number;
+    character: number;
+    constructor(data: NormalizedMessageJson);
+    static createFromDiagnostic(diagnostic: tsTypes.Diagnostic): NormalizedMessage;
+    static createFromLint(lint: tslintTypes.RuleFailure): NormalizedMessage;
+    static createFromJSON(json: NormalizedMessageJson): NormalizedMessage;
+    static compare(messageA: NormalizedMessage, messageB: NormalizedMessage): number;
+    static equals(messageA: NormalizedMessage, messageB: NormalizedMessage): boolean;
+    static deduplicate(messages: NormalizedMessage[]): NormalizedMessage[];
+    static compareTypes(typeA: ErrorType, typeB: ErrorType): number;
+    static compareSeverities(severityA: Severity, severityB: Severity): number;
+    static compareOptionalStrings(stringA: string, stringB: string): number;
+    static compareNumbers(numberA: number, numberB: number): number;
+    toJSON(): NormalizedMessageJson;
+    getType(): ErrorType;
+    isDiagnosticType(): boolean;
+    isLintType(): boolean;
+    getCode(): string | number;
+    getFormattedCode(): string | number;
+    getSeverity(): Severity;
+    isErrorSeverity(): boolean;
+    isWarningSeverity(): boolean;
+    getContent(): string;
+    getFile(): string;
+    getLine(): number;
+    getCharacter(): number;
+}
+export = NormalizedMessage;
