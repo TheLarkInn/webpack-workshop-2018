@@ -13,7 +13,9 @@ module.exports = (env) => {
       rules: [
         {
           test: /\.png/,
-          use: ['url-loader']
+          use: [{loader: 'url-loader', options: {
+            limit: 4096
+          }}]
         }
       ]
     },
