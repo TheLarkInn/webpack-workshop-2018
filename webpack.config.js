@@ -8,7 +8,15 @@ module.exports = (env) => {
   console.log(env.mode);
 
   return webpackMerge({
-    mode: env.mode,
+    mode: "none",
+    module: {
+      rules: [
+        {
+          test: /\.png/,
+          use: ['url-loader']
+        }
+      ]
+    },
     plugins: [
       new HtmlWebpackPlugin(), new webpack.ProgressPlugin()
     ]

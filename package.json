@@ -7,7 +7,7 @@
     "serve": "http-server ./",
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
-    "dev": "npm run webpack-dev-server -- --env.mode development --watch",
+    "dev": "npm run webpack-dev-server -- --env.mode development --hot",
     "prod": "npm run webpack -- --env.mode production"
   },
   "repository": {
@@ -25,7 +25,12 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
