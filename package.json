@@ -11,7 +11,8 @@
     "prod": "npm run webpack -- --env.mode production",
     "prod:compression": "npm run prod -- --env.presets compression",
     "prod:analyze": "npm run prod -- --env.presets analyze",
-    "prod:preproduction": "npm run prod -- --env.presets compression --env.presets analyze"
+    "prod:preproduction": "npm run prod -- --env.presets compression --env.presets analyze",
+    "prod:babel": "npm run prod -- --env.presets babel"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,10 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
     "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
