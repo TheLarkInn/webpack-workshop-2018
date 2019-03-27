@@ -4,7 +4,10 @@
   "description": "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server ./"
+    "serve": "http-server ./",
+    "webpack": "webpack",
+    "dev": "npm run webpack -- --mode development",
+    "prod": "npm run webpack -- --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,9 @@
   "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
