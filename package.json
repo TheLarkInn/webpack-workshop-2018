@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "http-server ./",
     "webpack": "webpack",
-    "dev": "npm run webpack -- --env.mode development --watch",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "npm run webpack-dev-server -- --env.mode development --watch",
     "prod": "npm run webpack -- --env.mode production"
   },
   "repository": {
@@ -24,7 +25,9 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }

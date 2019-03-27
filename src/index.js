@@ -1,4 +1,8 @@
-import foo from "./foo";
-import {bar0, bar1} from "./bar";
+import makeDiv from "./makeDiv";
+import makeButton from "./makeButton";
 
-console.log(foo, bar0, bar1);
+const welcomeMessage = makeDiv("Welcome!", "blue");
+const button0 = makeButton("Click Me!");
+
+document.body.appendChild(welcomeMessage);
+document.body.appendChild(button0);
