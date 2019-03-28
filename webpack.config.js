@@ -20,9 +20,6 @@ module.exports = ({ mode, presets } = {mode: "production", presets: [] }) => {
         }
       ]
     },
-    optimization: {
-      runtimeChunk: true,
-    },
     plugins: [
       new HtmlWebpackPlugin(), new webpack.ProgressPlugin()
     ]

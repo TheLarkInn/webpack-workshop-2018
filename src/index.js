@@ -1,12 +1,28 @@
 import "./index.css";
 import "./button.css";
 import "./image.css";
+
 import imgSrc from "./webpack-image.png";
 import makeDiv from "./makeDiv";
 import makeButton from "./makeButton";
 
-const getMakeUniqSpan = () => import("./makeUniqSpan");
-const getMessage = (messageName) => import(`./messages/${messageName}`);
+const getMakeUniqSpan = () => import(
+    /* webpackChunkName: "makeUniqSpan" */
+    "./makeUniqSpan"
+);
+
+let getMessage;
+
+if (process.env.NODE_ENV === "production") {
+    getMessage = (messageName) => import(
+        `./messages/${messageName}`
+    );
+} else {
+    getMessage = (messageName) => import(
+        /* webpackMode: "lazy-once" */
+        `./messages/${messageName}`
+    );
+}
 
 const img = document.createElement("img");
 img.src = imgSrc;
