@@ -6,19 +6,6 @@ import imgSrc from "./webpack-image.png";
 import makeDiv from "./makeDiv";
 import makeButton from "./makeButton";
 
-const obj = {
-    foo: {
-      bar: {
-        baz() {
-          return 42;
-        },
-      },
-    },
-  };
-  
-const baz = obj?.foo?.bar?.baz(); // 42
-console.log(baz);
-
 const img = document.createElement("img");
 img.src = imgSrc;
 
