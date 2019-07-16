@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "prod": "npm run webpack -- --mode production",
-    "dev": "npm run webpack -- --mode development"
+    "webpack-dev-server": "webpack-dev-server",
+    "prod": "npm run webpack -- --env.mode production",
+    "dev": "npm run webpack-dev-server -- --env.mode development --hot"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,9 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
