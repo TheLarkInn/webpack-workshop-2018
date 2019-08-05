@@ -40,31 +40,31 @@ Tip: Use `git checkout BRANCH_NAME -f` to jump into a given branch. The `-f` wil
 
 ### Webpack 4 Fundamentals Branches
 
-feature/01-fem-first-script
-feature/03-fem-debug-script
-feature/0310-add-first-config-mode-none
-feature/031-all-module-types
-feature/0311-add-first-plugins
-feature/0312-webpack-dev-server
-feature/04010-composing-configs-webpack-merge
-feature/040101-add-style-loader
-feature/04013-adding-presets
-feature/04014-typescript-preset
-feature/0414-analyze-compress-presets 
+- feature/01-fem-first-script
+- feature/03-fem-debug-script
+- feature/0310-add-first-config-mode-none
+- feature/031-all-module-types
+- feature/0311-add-first-plugins
+- feature/0312-webpack-dev-server
+- feature/04010-composing-configs-webpack-merge
+- feature/040101-add-style-loader
+- feature/04013-adding-presets
+- feature/04014-typescript-preset
+- feature/0414-analyze-compress-presets 
 
 ### Web Performance with Webpack Branches
 
-feature/0415-fixed-presets-bug-sorry-use-this
-feature/0500-code-splitting-example
-feature/0500-code-splitting-example
-feature/0501-code-splitting-large-libs
-feature/0502-not-so-dynamic-code-splitting
-feature/0503-webpack-magic-comments
-feature/0504-webpack-prefetch-preload
+- feature/0415-fixed-presets-bug-sorry-use-this
+- feature/0500-code-splitting-example
+- feature/0500-code-splitting-example
+- feature/0501-code-splitting-large-libs
+- feature/0502-not-so-dynamic-code-splitting
+- feature/0503-webpack-magic-comments
+- feature/0504-webpack-prefetch-preload
 
 ### Webpack 4 Plugins Branches
 
-feature/0504-webpack-prefetch-preload
-feature/059-my-first-plugin 
-feature/0600-custom-webpack-plugins
-feature/0700-custom-loaders
+- feature/0504-webpack-prefetch-preload
+- feature/059-my-first-plugin 
+- feature/0600-custom-webpack-plugins
+- feature/0700-custom-loaders
