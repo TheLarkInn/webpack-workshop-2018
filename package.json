@@ -4,6 +4,12 @@
   "description": "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack",
+    "dev": " npm run webpack -- --mode development",
+    "prod": "npm run webpack -- --mode production",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "dev:debug": " npm run debug -- --mode development",
+    "prod:debug": "npm run debug -- --mode production",
     "serve": "http-server ./"
   },
   "repository": {
@@ -19,5 +25,20 @@
   "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   }
 }
