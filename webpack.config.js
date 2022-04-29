@@ -1,9 +1,8 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = ({ mode }) => {
+module.exports = () => {
   return {
-    mode,
     output: {
       filename: 'bundle.js',
     },

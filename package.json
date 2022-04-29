@@ -6,10 +6,11 @@
   "scripts": {
     "webpack": "webpack",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "prod": "npm run webpack -- --env.mode production",
-    "dev": "npm run webpack -- --env.mode development --watch",
-    "prod:debug": "npm run debug -- --env.mode production",
-    "dev:debug": "npm run debug -- --env.mode development"
+    "prod": "npm run webpack -- --mode production",
+    "dev": "npm run webpack-dev-server -- --mode development",
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode development",
+    "webpack-dev-server": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@webpack-cli/serve": "^1.6.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.1.0",
     "file-loader": "^4.1.0",
@@ -37,7 +39,8 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.39.1",
     "webpack-bundle-analyzer": "^3.4.1",
-    "webpack-cli": "^3.3.6",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
     "webpack-node-externals": "^1.7.2",
     "workbox-webpack-plugin": "^4.3.1"
   },
